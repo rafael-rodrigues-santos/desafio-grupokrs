@@ -4,13 +4,15 @@ import './index.css';
 // import App from './App';
 import Menu from '../src/components/menu/menu.jsx';
 import Add from '../src/components/add/add.jsx';
+import List from '../src/components/list/list.jsx';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     <Menu />
-    <Add />
+    {/* <Add /> */}
+    <List />
   </React.StrictMode>,
   document.getElementById('root')
 );

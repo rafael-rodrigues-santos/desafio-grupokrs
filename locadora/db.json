@@ -1,0 +1,40 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Filme 1",
+      "sinopse": "bla bla bla",
+      "genero": "terror",
+      "dt_lancamento": "00/00/0000",
+      "idioma": "portugues",
+      "legendado": "sim",
+      "diretor": "Fulano",
+      "link_imdb": "www",
+      "avaliacao": 10
+    },
+    {
+        "id": 2,
+        "titulo": "Filme 2",
+        "sinopse": "bla bla bla do filme 2",
+        "genero": "Comédia",
+        "dt_lancamento": "00/00/0000",
+        "idioma": "portugues",
+        "legendado": "não",
+        "diretor": "Beltrano",
+        "link_imdb": "www",
+        "avaliacao": 10
+    },
+    {
+        "id": 3,
+        "titulo": "Filme 3",
+        "sinopse": "bla bla bla 3",
+        "genero": "ficção",
+        "dt_lancamento": "00/00/0000",
+        "idioma": "ingles",
+        "legendado": "sim",
+        "diretor": "Ciclano",
+        "link_imdb": "www",
+        "avaliacao": 8
+    }
+  ]
+}
