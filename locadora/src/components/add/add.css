@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.add {
+    width: 90%;
+    border: solid red;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.add__title {
+    max-width: 100%;
+    text-align: center;
+}
+
+.add_title h1 {
+    
+}
+
+.add__form {
+    width: 90%;
+    max-width: 960px;
+    border: solid blue;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    margin-bottom: 20px;
+}
