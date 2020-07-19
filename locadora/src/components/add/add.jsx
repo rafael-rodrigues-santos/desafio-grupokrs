@@ -8,10 +8,17 @@ const AddUser = () => {
   let history = useHistory();
   const [filme, setUser ] = useState({
     titulo: "",
-    sinopse: ""
+    sinopse: "",
+    genero: "",
+    lancamento: "",
+    idioma: "",
+    legenda: "",
+    diretor: "",
+    avaliacao: "",
+    link: ""
   });
 
-  const { titulo, sinopse } = filme;
+  const { titulo, sinopse, genero, lancamento, idioma, legenda, diretor, avaliacao, link } = filme;
       const onInputChange = e => {
         console.log(e.target.value);
         setUser({ ... filme, [e.target.name]: e.target.value });
@@ -21,7 +28,7 @@ const AddUser = () => {
       const onSubmit = async e => {
         e.preventDefault();
         await api.post("/filmes", filme);
-        // history.push('/');
+        history.push('/');
       } ;
     
       return (
@@ -34,21 +41,21 @@ const AddUser = () => {
                     <label> Título do Filme: </label>
                     <input type="text" name="titulo" value={titulo} onChange={e => onInputChange(e)} />
                     <label> Sinopse: </label>
-                    <input type="text" name="sinopse" value={sinopse} onChange={e => onInputChange(e)} ></input>
+                    <input type="text" name="sinopse" value={sinopse} onChange={e => onInputChange(e)} />
                     <label> Genero: </label>
-                    <input type="text"></input>
+                    <input type="text" name="genero" value={genero} onChange={e => onInputChange(e)} />
                     <label> Data de lançamento: </label>
-                    <input type="text"></input>
+                    <input type="text" name="lancamento" value={lancamento} onChange={e => onInputChange(e)} />
                     <label> Idioma: </label>
-                    <input type="text"></input>
+                    <input type="text" name="idioma" value={idioma} onChange={e => onInputChange(e)} />
                     <label> Legendado: </label>
-                    <input type="text"></input>
+                    <input type="text" name="legenda" value={legenda} onChange={e => onInputChange(e)} />
                     <label> Diretor: </label>
-                    <input type="text"></input>
+                    <input type="text" name="diretor" value={diretor} onChange={e => onInputChange(e)} />
                     <label> Link no IMDB: </label>
-                    <input type="text"></input>
+                    <input type="text" name="link" value={link} onChange={e => onInputChange(e)} />
                     <label> Avaliação do filme: </label>
-                    <input type="text"></input>
+                    <input type="text" name="avaliacao" value={avaliacao} onChange={e => onInputChange(e)} />
                     <button> Cadastrar </button>
                     {/* <button onClick={(e) => this.fSubmit(e)}> Cadastrar </button> */}
                     <button> Limpar </button>
