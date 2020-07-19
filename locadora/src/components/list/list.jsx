@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import "./list.css";
 import api from "../../api.js";
 import { Link } from "react-router-dom";
@@ -20,6 +20,22 @@ export default class List extends Component {
 
     const {filmes} = this.state;
     console.log("Teste", filmes);
+
+    // const [filme, setUser ] = useState([]);
+
+    // useEffect(() => {
+
+    // }, []);
+
+      // const loadMovie = async () => {
+      //       const result = await api.get(`/filmes/${id}`);
+      //       setUser(result.data);
+      //   }
+
+    const deleteMovie = async id => {
+      await api.delete(`/filmes/${id}`);
+      this.componentDidMount();
+    }
 
     return (
       <div className="list">
@@ -57,7 +73,7 @@ export default class List extends Component {
                       {filme.legenda}
                     </td>
                     <td>
-                      <button>Excluir</button>
+                      <button onClick={() => deleteMovie(filme.id)}> Excluir</button>
                       <button> <Link to={`filmes/${filme.id}`}> Edit </Link> </button>
                     </td>
                   </tr>
