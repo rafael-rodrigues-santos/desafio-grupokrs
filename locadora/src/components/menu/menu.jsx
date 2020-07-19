@@ -6,13 +6,11 @@ export default class Menu extends Component {
         return (
             <div className="menu">
                 <div className="menu__container">
-                    <div className="menu__container--itens">
-                        <div>
-                            Inicio
-                        </div>
-                        <div>
-                            Sobre
-                        </div>
+                    <div className="menu__container-itens">
+                        <ul>
+                            <li> Home </li>
+                            <li> Adcionar Filme </li>
+                        </ul>
                     </div>
                 </div>
             </div>
