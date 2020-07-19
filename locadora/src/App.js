@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from '../src/components/menu/menu';
 import List from './components/list/list';
 import Add from './components/add/add';
+import Edit from './components/edit/edit';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/" component={List} />
       <Route exact path="/list" component={List} />
       <Route exact path="/add" component={Add} />
+      <Route exact path="/filmes/:id" component={Edit} />
     </Switch>
       </Router>
     </div>
