@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./edit.css";
 import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
@@ -66,8 +66,9 @@ const Edit = () => {
                     <input type="text" name="link" value={link} onChange={e => onInputChange(e)} />
                     <label> Avaliação do filme: </label>
                     <input type="text" name="avaliacao" value={avaliacao} onChange={e => onInputChange(e)} />
-                    <button> Editar </button>
-                    {/* <button onClick={(e) => this.fSubmit(e)}> Cadastrar </button> */}
+                    <div className="btns">
+                    <button className="btns__edit"> Editar </button>
+                    </div>
                 </form>
             </div>
           
