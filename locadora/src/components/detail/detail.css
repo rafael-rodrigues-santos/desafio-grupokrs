@@ -1,0 +1,74 @@
+/* html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} */
+
+.detail {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(129, 129, 129, 0.4) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+.detail__title h1 {
+    font-size: 40px;
+    text-align: left;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+    margin: 5px 10px;
+}
+
+.detail__year {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.detail__content-note p {
+    font-size: 22px;
+    margin: 0;
+    padding: 0 10px;
+    text-align: right;
+}
+
+.detail__content-note .destaque {
+    font-size: 28px;
+    color: #fbff00;
+    font-weight: 600;
+}
+
+.detail__content-information {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.detail__content-information p {
+    margin: 5px 10px;
+    color: rgb(194, 194, 194);
+    text-shadow: 0 0 2px #000;
+    font-size: 18px;
+}
+
+.detail__content-sinopse {
+    background: #fff;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+}
+
+.detail__content-sinopse p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.detail__content-link {
+    padding: 5px 10px;
+}
+
+.detail__content-link p {
+    font-weight: 600;
+    text-align: left;
+}
