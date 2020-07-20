@@ -1,55 +1,40 @@
 {
   "filmes": [
     {
+      "titulo": "Outro filme",
+      "sinopse": "filmes",
+      "genero": "Ficção/Romance",
+      "lancamento": "2016",
+      "idioma": "Portugues/Ingles",
+      "legenda": "Sim",
+      "diretor": "",
+      "avaliacao": "9",
+      "link": "",
       "id": 1
     },
     {
-      "id": 2,
-      "titulo": "Filme 2",
-      "sinopse": "bla bla bla do filme 2",
-      "genero": "Comédia",
-      "dt_lancamento": "00/00/0000",
-      "idioma": "portugues",
-      "legendado": "não",
-      "diretor": "Beltrano",
-      "link_imdb": "www",
-      "avaliacao": 10
-    },
-    {
-      "id": 3,
-      "titulo": "Filme 3",
-      "sinopse": "bla bla bla 3",
-      "genero": "ficção",
-      "dt_lancamento": "00/00/0000",
-      "idioma": "ingles",
-      "legendado": "sim",
-      "diretor": "Ciclano",
-      "link_imdb": "www",
-      "avaliacao": 8
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "titulo": "Outro filme",
+      "titulo": "Novo filme",
       "sinopse": "teste",
-      "id": 7
+      "genero": "Ficção/Romance",
+      "lancamento": "2020",
+      "idioma": "Portugues/Ingles",
+      "legenda": "Não",
+      "diretor": "",
+      "avaliacao": "5",
+      "link": "",
+      "id": 3
     },
     {
-      "titulo": "Outro ",
-      "sinopse": "mais um",
-      "id": 8
-    },
-    {
-      "titulo": "Efeito Borboleta",
-      "sinopse": "Esse filme é bom",
-      "id": 9
+      "titulo": "Greyhound: Na Mira do Inimigo",
+      "sinopse": "Early in World War II, an inexperienced U.S. Navy captain must lead an Allied convoy being stalked by Nazi U-boat wolfpacks.",
+      "genero": "Action, Drama, History ",
+      "lancamento": "2020",
+      "idioma": "Portugues/Ingles",
+      "legenda": "Sim",
+      "diretor": "Aaron Schneider",
+      "avaliacao": "9",
+      "link": "https://www.imdb.com/title/tt6048922/?ref_=hm_fanfav_tt_1_pd_fp1",
+      "id": 4
     }
   ]
 }
