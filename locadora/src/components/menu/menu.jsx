@@ -9,8 +9,8 @@ export default class Menu extends Component {
                 <div className="menu__container">
                     <div className="menu__container-itens">
                         <ul>
-                            <li> <Link to="/list"> Home </Link> </li>
-                            <li> <Link to="/add"> Adcionar Filme </Link> </li>
+                            <Link to="/list" className="menu__container-link teste"><li >  Home </li> </Link> 
+                            <Link to="/add" className="menu__container-link"> <li> Adicionar Filme </li> </Link> 
                         </ul>
                     </div>
                 </div>
