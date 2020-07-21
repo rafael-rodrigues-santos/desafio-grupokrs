@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { Component } from "react";
 import "../../css/main.css";
 import api from "../../api.js";
 import { Link } from "react-router-dom";
@@ -13,9 +13,8 @@ export default class List extends Component {
 
   async componentDidMount(){
     const response = await api.get('/filmes');
-    console.log(response.data);
 
-    this.setState({filmes: response.data});
+    this.setState({filmes: response.data.reverse()});
   }
 
   render() {
@@ -30,7 +29,7 @@ export default class List extends Component {
     return (
       <div className="list">
           <div className="list_title">
-            <h1> Lista de Filmes</h1>
+            <h1> Filmes</h1>
           </div>
           <div className="list__content">
             <table className="tabela">
@@ -42,6 +41,7 @@ export default class List extends Component {
               <th> Data de Lançamento </th>
               <th> Idioma </th>
               <th> Legendado </th>
+              <th> Link </th>
               <th> Ação </th>
               </tr>
             </thead>
@@ -66,6 +66,9 @@ export default class List extends Component {
                     <td>
                       {filme.legenda}
                     </td>
+                    <td>
+                      <a href={filme.link} target="_blank">{filme.link}</a>
+                    </td>
                     <td className="list__icons">
                     <Link to={`filmes/list/${filme.id}`} className="icon edit"> <FontAwesomeIcon icon={faEdit} /> </Link>
                     <Link to={`filmes/${filme.id}`} className="icon view"> <FontAwesomeIcon icon={faEye} /> </Link>
@@ -77,9 +80,6 @@ export default class List extends Component {
 
               </tbody>
                   
-              
-             
-
             </table>
               
           </div>
