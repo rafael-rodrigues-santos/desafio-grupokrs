@@ -1,28 +1,16 @@
 {
   "filmes": [
     {
-      "titulo": "Outro filme",
-      "sinopse": "filmes",
-      "genero": "Ficção/Romance",
-      "lancamento": "2016",
+      "titulo": "Titanic ",
+      "sinopse": "Um aristocrata de dezessete anos se apaixona por um artista gentil, mas pobre, a bordo do luxuoso e malfadado R.M.S. Titânic",
+      "genero": "Drama, Romance ",
+      "lancamento": "1997",
       "idioma": "Portugues/Ingles",
       "legenda": "Sim",
-      "diretor": "",
-      "avaliacao": "9",
-      "link": "",
+      "diretor": "James Cameron",
+      "avaliacao": "7,8",
+      "link": "https://www.imdb.com/title/tt0120338/?ref_=fn_al_tt_1",
       "id": 1
-    },
-    {
-      "titulo": "Novo filme",
-      "sinopse": "teste",
-      "genero": "Ficção/Romance",
-      "lancamento": "2020",
-      "idioma": "Portugues/Ingles",
-      "legenda": "Não",
-      "diretor": "",
-      "avaliacao": "5",
-      "link": "",
-      "id": 3
     },
     {
       "titulo": "Greyhound: Na Mira do Inimigo",
@@ -35,6 +23,42 @@
       "avaliacao": "9",
       "link": "https://www.imdb.com/title/tt6048922/?ref_=hm_fanfav_tt_1_pd_fp1",
       "id": 4
+    },
+    {
+      "titulo": "Os Vingadores",
+      "sinopse": "Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando perdido no espaço sem água nem comida, o Capitão América/Steve Rogers (Chris Evans) e a Viúva Negra/Natasha Romanov (Scarlett Johansson) precisam liderar a resistência contra o titã louco.",
+      "genero": "Ação, Fantasia, Aventura",
+      "lancamento": "2019",
+      "idioma": "Portugues/Ingles",
+      "legenda": "Sim",
+      "diretor": "Joe Russo, Anthony Russo",
+      "avaliacao": "8",
+      "link": "https://www.imdb.com/title/tt4154796/",
+      "id": 5
+    },
+    {
+      "titulo": "Parasita",
+      "sinopse": "A ganância e a discriminação de classe ameaçam o recém-formado relacionamento simbiótico entre a rica família Park e o pobre clã Kim.",
+      "genero": "Drama, Comédia",
+      "lancamento": "2019",
+      "idioma": "Portugues/Ingles",
+      "legenda": "Não",
+      "diretor": "Bong Joon Ho",
+      "avaliacao": "8.5",
+      "link": "https://www.imdb.com/title/tt6751668/",
+      "id": 6
+    },
+    {
+      "titulo": "Liga da Justiça",
+      "sinopse": "Alimentado por sua fé restaurada na humanidade e inspirado pelo ato altruísta do Super-Homem, Bruce Wayne pede a ajuda de sua aliada recém-descoberta, Diana Prince, para enfrentar um inimigo ainda maior.",
+      "genero": "Ação, Fantasia, Aventura",
+      "lancamento": "2017",
+      "idioma": "Portugues/Ingles",
+      "legenda": "Sim",
+      "diretor": "Zack Snyder",
+      "avaliacao": "6.4",
+      "link": "https://www.imdb.com/title/tt0974015/?ref_=nv_sr_srsg_0",
+      "id": 7
     }
   ]
 }
