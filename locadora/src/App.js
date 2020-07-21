@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Menu from "../src/components/menu/menu";
 import List from "./components/list/list";
