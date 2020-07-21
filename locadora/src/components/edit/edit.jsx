@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../css/main.css";
 import { useHistory, useParams } from "react-router-dom";
-import axios from "axios";
 import api from "../../api.js";
 
 const Edit = () => {
@@ -21,7 +20,6 @@ const Edit = () => {
 
   const { titulo, sinopse, genero, lancamento, idioma, legenda, diretor, avaliacao, link } = filme;
       const onInputChange = e => {
-        console.log(e.target.value);
         setUser({ ... filme, [e.target.name]: e.target.value });
         
       }
