@@ -40,6 +40,10 @@
   cursor: pointer;
 }
 
+.list_title {
+  text-transform: uppercase;
+}
+
 table {
   font-family: arial;
   max-width: 100%;
@@ -83,6 +87,11 @@ table {
 
 .tabela td {
   border: 0;
+}
+
+.tabela td a {
+  text-decoration: none;
+  color: #0000ca;
 }
 
 .tabela td:not(:first-child) {
@@ -228,11 +237,82 @@ table {
   color: #ffa600;
 }
 
-.erro {
-  border: 1px solid red;
+.detail {
+  width: 90%;
+  max-width: 720px;
+  padding: 5px;
+  margin: auto;
+  background: #7a7a7a;
 }
 
-body {
+.detail__title h1 {
+  font-size: 40px;
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.detail__year {
+  font-size: 22px;
+  font-style: italic;
+}
+
+.detail__content-note p {
+  font-size: 22px;
+  margin: 0;
+  padding: 0 10px;
+  text-align: right;
+}
+
+.detail__content-note .destaque {
+  font-size: 28px;
+  color: #fbff00;
+  font-weight: 600;
+}
+
+.detail__content-information {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.detail__content-information p {
+  margin: 5px 10px;
+  color: #ececec;
+  text-shadow: 0 0 2px #000;
+  font-size: 18px;
+}
+
+.detail__content-sinopse {
+  background: #fff;
+  padding: 5px;
+  border: none;
+}
+
+.detail__content-sinopse p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.detail__content-link {
+  padding: 5px 10px;
+  font-weight: 600;
+  text-align: left;
+  color: #ececec;
+}
+
+.detail__content-link a {
+  color: #ececec;
+  text-decoration: none;
+}
+
+html, body {
   margin: 0;
   padding: 0;
 }

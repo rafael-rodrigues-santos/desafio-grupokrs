@@ -1,3 +1,7 @@
+.list_title {
+    text-transform: uppercase;
+}
+
 table {
     font-family: arial;
     max-width: 100%;
@@ -37,6 +41,10 @@ table {
   }
   .tabela td {
     border: 0;
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 202);
+        }
   }
   .tabela td:not(:first-child) {
     display: block;
