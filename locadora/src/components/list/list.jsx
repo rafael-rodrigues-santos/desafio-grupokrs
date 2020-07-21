@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
-import "./list.css";
+import "../../css/main.css";
 import api from "../../api.js";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

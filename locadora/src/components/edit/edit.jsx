@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./edit.css";
+import "../../css/main.css";
 import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import api from "../../api.js";
