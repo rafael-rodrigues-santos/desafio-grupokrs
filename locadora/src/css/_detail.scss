@@ -1,0 +1,70 @@
+.detail {
+    width: 90%;
+    max-width: 720px;
+    padding: 5px;
+    margin: auto;
+    background: #7a7a7a;
+}
+
+.detail__title h1 {
+    font-size: 40px;
+    text-align: left;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.detail__year {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.detail__content-note p {
+    font-size: 22px;
+    margin: 0;
+    padding: 0 10px;
+    text-align: right;
+}
+
+.detail__content-note .destaque {
+    font-size: 28px;
+    color: #fbff00;
+    font-weight: 600;
+}
+
+.detail__content-information {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    p {
+        margin: 5px 10px;
+        color: rgb(236, 236, 236);
+        text-shadow: 0 0 2px #000;
+        font-size: 18px;
+    }
+}
+
+.detail__content-sinopse {
+    background: #fff;
+    padding: 5px;
+    border: none;
+
+    p {
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+
+.detail__content-link {
+    padding: 5px 10px;
+    font-weight: 600;
+        text-align: left;
+        color: rgb(236, 236, 236);
+    
+    a {
+        color: rgb(236, 236, 236);
+        text-decoration: none;
+    }
+}
+
