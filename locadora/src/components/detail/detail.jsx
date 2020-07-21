@@ -1,7 +1,6 @@
-import React, { Component, useState, useEffect } from "react";
-import "./detail.css";
-import { useHistory, useParams } from "react-router-dom";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
+import "../../css/main.css";
+import { useParams } from "react-router-dom";
 import api from "../../api.js";
 
 const Detail = () => {
@@ -27,22 +26,6 @@ const Detail = () => {
     const result = await api.get(`/filmes/${id}`);
     setUser(result.data);
 }
-
-//   const { titulo, sinopse, genero, lancamento, idioma, legenda, diretor, avaliacao, link } = filme;
-//       const onInputChange = e => {
-//         console.log(e.target.value);
-//         setUser({ ... filme, [e.target.name]: e.target.value });
-        
-//       }
-
-      
-
-//       const onSubmit = async e => {
-//         e.preventDefault();
-//         await api.put(`/filmes/${id}`, filme);
-//         history.push('/');
-//       } ;
-
     
       return (
         <div className="detail">
@@ -63,7 +46,7 @@ const Detail = () => {
                 </div>
                 <div className="detail__content-link">
                     <p> Diretor: {filme.diretor} </p>
-                    <p> Link IMDB: {filme.link} </p>
+                    <p> Link IMDB: <a href={filme.link} target="_blank"> {filme.link} </a> </p>
                 </div>
             </div>
           

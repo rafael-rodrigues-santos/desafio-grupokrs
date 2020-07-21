@@ -3,9 +3,9 @@ import "../../css/main.css";
 import { useHistory } from "react-router-dom";
 import api from "../../api.js";
 
-const AddUser = () => {
+const AddMovie = () => {
   let history = useHistory();
-  const [filme, setUser] = useState({
+  const [filme, setMovie] = useState({
     titulo: "",
     sinopse: "",
     genero: "",
@@ -29,16 +29,11 @@ const AddUser = () => {
     link,
   } = filme;
   const onInputChange = (e) => {
-    console.log(e.target.value);
-    setUser({ ...filme, [e.target.name]: e.target.value });
+    setMovie({ ...filme, [e.target.name]: e.target.value });
   };
 
   const onSubmit = async (e) => {
     const titulo = document.querySelector(".titulo");
-    const sinopse = document.querySelector(".sinopse");
-    const genero = document.querySelector(".genero");
-    const idioma = document.querySelector(".idioma");
-    const legenda = document.querySelector(".titulo");
 
     if (titulo.value != "") {
       e.preventDefault();
@@ -47,7 +42,6 @@ const AddUser = () => {
       return;
     } else {
       alert("Não pode gravar");
-      titulo.classList.add("erro");
       e.preventDefault();
       return false;
     }
@@ -133,4 +127,4 @@ const AddUser = () => {
     </div>
   );
 };
-export default AddUser;
+export default AddMovie;
