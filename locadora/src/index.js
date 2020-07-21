@@ -8,7 +8,6 @@ import Add from '../src/components/add/add.jsx';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    
   </React.StrictMode>,
   document.getElementById('root')
 );
